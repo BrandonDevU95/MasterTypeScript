@@ -25,3 +25,38 @@ nombres.forEach((nombre, index) => {
 });
 
 nombres.forEach((nombre) => console.log(nombre));
+
+//Iterables
+const iterable = nombres[Symbol.iterator]();
+console.log(iterable.next());
+
+//Recorrer string
+// let cadena = 'Hola mundo';
+// for (let letra of cadena) {
+// 	console.log(letra);
+// }
+
+//JSON
+let frutas = {
+	nombre: 'Manzana',
+	color: 'Rojo',
+	precio: '10',
+};
+
+frutas[Symbol.iterator] = function () {
+	let index = 0;
+	let valores = Object.values(this);
+
+	return {
+		next: () => {
+			if (index >= valores.length) {
+				return { undefined, done: true };
+			}
+			return { value: valores[index++], done: false };
+		},
+	};
+};
+
+for (let propiedad of frutas) {
+	console.log(propiedad);
+}
