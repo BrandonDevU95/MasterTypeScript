@@ -59,3 +59,22 @@ let pelicula = {
 }
 
 console.log(pelicula.mostrarInfo());
+
+pelicula['pais'] = 'España';
+pelicula.pais = 'Francia';
+delete pelicula.pais;
+
+console.log(pelicula)
+
+//Comprueba que existe una propiedad en un objeto
+console.log('titulo' in pelicula);
+
+//Devuelve la clave
+for (let clave in pelicula) {
+	console.log(clave);
+}
+
+//Devuelve el valor
+for (let valor in pelicula) {
+	console.log(pelicula[valor]);
+}
