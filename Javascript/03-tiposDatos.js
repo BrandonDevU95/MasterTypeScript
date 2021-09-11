@@ -39,3 +39,23 @@ console.log(
 	typeof array,
 	typeof paises
 );
+
+let pelicula = {
+	titulo: 'Batman',
+	genero: 'Acción',
+	year: 2019,
+	director: 'Tim Burton',
+	pais: 'Estados Unidos',
+	mostrarInfo: function() {
+		return `
+		***** LA PPELICULA DE LA SEMANA *****
+		Titulo: ${this.titulo},
+		Género: ${this.genero},
+		Año: ${this.year},
+		Director: ${this.director},
+		Pais: ${this.pais}		
+		`;
+	}
+}
+
+console.log(pelicula.mostrarInfo());
