@@ -1,0 +1,2 @@
+# MasterTypeScript
+Bienvenido al Máster en TypeScript y JavaScript ES2021, en el que aprenderemos en profundidad a trabajar con los dos lenguajes de programación más populares que existen actualmente y conoceremos sus funcionalidades más modernas.  El siguiente paso que necesitas en tu aprendizaje de JavaScript para dominar aspectos más avanzados y descubrir más acerca de las tecnologías de desarrollo web con más demanda laboral y más proyección de futuro.
