@@ -78,3 +78,28 @@ for (let clave in pelicula) {
 for (let valor in pelicula) {
 	console.log(pelicula[valor]);
 }
+
+//Symbol
+//Tipo de dato primitivo
+//Son valores unicos aunque su contenido sea igual
+let animal = Symbol('tigre');
+let animal2 = Symbol('tigre');
+
+if (animal == animal2) {
+	console.log('Son iguales');
+} else { 
+	console.log('No son iguales');
+}
+
+let user = {
+	id: 1,
+	name: 'Juan',
+	age: 20,
+	country: 'España'
+}
+
+//Puedes agregar otro id son que entre en conficto con el anterior
+let id = Symbol('id');
+user[id] = 2;
+
+console.log(animal);
