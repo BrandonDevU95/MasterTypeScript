@@ -15,3 +15,18 @@ if (persona.edad >= 18) {
 console.log(persona.edad >= 18 ? 'Es mayor de edad' : 'Es menor de edad');
 
 //Diferencia entre == y === | != y !==
+let edad = '20';
+let edad2 = 20;
+
+if (edad == edad2) {
+	console.log('Son iguales');
+} else {
+	console.log('No son iguales');
+}
+
+//Evalue el tipo de dato tambien
+if (edad === edad2) {
+	console.log('Son iguales');
+} else {
+	console.log('No son iguales');
+}
