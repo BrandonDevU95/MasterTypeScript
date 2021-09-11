@@ -28,6 +28,8 @@ if (pais == 'México') {
 	console.log(pais);
 }
 
+mostarPais();
+
 //No accesible fuera del bloque
 //console.log(continente);
 
@@ -45,4 +47,23 @@ for (let i = 0; i < 5; i++) {
 
 console.log(i);
 
-mostarPais();
+//CONTS : Constante
+//No es variable
+
+let edad = 30;
+
+console.log(edad);
+
+edad = 40;
+
+//Esto no es posible
+//Usar con datos que no se puedan cambiar
+console.log(edad);
+
+const edad = 30;
+
+console.log(edad);
+
+edad = 40;
+
+console.log(edad);
