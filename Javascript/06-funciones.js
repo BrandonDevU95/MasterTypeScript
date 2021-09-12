@@ -19,3 +19,25 @@ console.log(saludo3());
 
 let saludo4 = (persona, pais) => 'Hola te mando un saludo ' + persona + ' de ' + pais;
 console.log(saludo4('Mario', 'España'));
+
+//JSON
+let tienda = {
+	nombre: 'Gaming',
+	videojuegos: ['GTA', 'Fifa', 'Mario'],
+	mostrarVideojuegos: function () {
+		console.log(this.nombre);
+	},
+	mostrarVideojuegos2() {
+		console.log(this.nombre);
+	},
+
+	//No se usa this para esta función
+	mostrarVideojuegos3: () => {
+		// console.log(this.nombre);
+		console.log(tienda.nombre);
+	},
+};
+
+tienda.mostrarVideojuegos();
+tienda.mostrarVideojuegos2();
+tienda.mostrarVideojuegos3();
