@@ -19,11 +19,19 @@ let productos = [
 function getProductos() {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
-			resolve(productos);
+			//resolve(productos);
+			reject(Error('No hay productos'));
 		}, 500);
 	});
 }
 
-getProductos().then((items) => {
-	console.log(items);
-});
+getProductos()
+	.then((items) => {
+		console.log(items);
+	})
+	.catch((error) => {
+		console.log(error.message);
+	})
+	.finally(() => {
+		console.log('Finalizado');
+	});
