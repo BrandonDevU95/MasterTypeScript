@@ -20,3 +20,14 @@ let heroes = ['Spiderman', 'Capitan America'];
 let superheroes = ['Ironman', 'Capitan America', 'Thor', ...heroes];
 
 console.log(superheroes);
+
+//REST
+function movies(pelicula1, pelicula2, ...restoDePeliculas) {
+	console.log(pelicula1, pelicula2);
+	console.log(restoDePeliculas);
+	for (let pelicula of restoDePeliculas) {
+		console.log(pelicula);
+	}
+}
+
+movies('Señor de los anillos', 'Harry Potter', 'Batman', 'Superman');
