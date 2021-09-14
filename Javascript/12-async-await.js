@@ -20,14 +20,19 @@ function conseguirProductos() {
 	return new Promise((resolve, reject) => {
 		console.log('Cargando productos...');
 		setTimeout(() => {
-			resolve(productos);
+			// resolve(productos);
+			reject(new Error('Error al cargar los productos'));
 		}, 500);
 	});
 }
 
 async function getMisProductos() {
-	let mis_productos = await conseguirProductos();
-	console.log(mis_productos);
+	try {
+		let mis_productos = await conseguirProductos();
+		console.log(mis_productos);
+	} catch (error) {
+		console.log(error.message);
+	}
 }
 
 getMisProductos();
