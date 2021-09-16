@@ -16,7 +16,14 @@ class Coche {
 		this.velocidad = velocidad;
 		this.year = anio;
 	}
+
+	//Metodo estatico
+	static saludar(nombre) {
+		return 'Hola ' + nombre;
+	}
 }
 
 let mi_coche = new Coche();
 console.log(mi_coche.modelo);
+
+console.log(Coche.saludar('Juan'));
